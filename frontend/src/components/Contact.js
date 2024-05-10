@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Section,Container,Left,Rigth, InputDesc, InputEmail,Titlle } from '../styles/ContactStyle';
+import {Section,Container,Left,Rigth,InputDesc,InputEmail,Titlle,Button} from '../styles/ContactStyle';
 
 
 function Contact() {
@@ -12,6 +12,7 @@ function Contact() {
             <Titlle>Entre em contato</Titlle>
             <InputEmail type='email' placeholder='Email'/>
             <InputDesc type='textarea' placeholder='Descrição'/>
+            <Button>Submit</Button>
           </Left>
           <Rigth>
           </Rigth>

@@ -25,6 +25,7 @@ export const Left = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 12px 6px;
 `
 export const Rigth = styled.div`
   width: 15vw;
@@ -70,4 +71,26 @@ export const InputEmail = styled.input`
   }
 `
 export const Titlle = styled.h1`
+`
+export const Button = styled.button`
+  color: ${props => props.theme.fontColor};
+  font-size: large;
+  border: 2px solid ${props => props.theme.fontColor};
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  text-decoration: none;
+  &:active{
+    box-shadow: 2px 2px 15px ${props => props.theme.fontColor} inset;
+  }
+  &:focus{
+    outline: none;
+  }
+  &::placeholder {
+    color: ${props => props.theme.fontColor};
+    opacity: 0.5;
+  }
+  &:hover{
+    cursor: pointer;
+  }
 `
