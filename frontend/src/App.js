@@ -3,7 +3,6 @@ import GlobalStyle from "./styles/global";
 import styled, { ThemeProvider } from 'styled-components';
 import Home from "./Page/Home"
 
-import ParticlesComponent from "./components/Particle";
 import {darkTheme,ligthTheme} from "./styles/Theme"
 
 const Container = styled.div`
@@ -27,7 +26,6 @@ function App() {
       
       <ThemeProvider theme={theme==="dark" ? darkTheme : ligthTheme }>
         <Container>
-          <ParticlesComponent id="particles" options={theme}/>
           <GlobalStyle/>
           <Home/>
         </Container>

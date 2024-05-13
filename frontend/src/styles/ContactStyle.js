@@ -73,15 +73,15 @@ export const InputEmail = styled.input`
 export const Titlle = styled.h1`
 `
 export const Button = styled.button`
-  color: ${props => props.theme.fontColor};
+  color: ${props => props.theme.body};
   font-size: large;
   border: 2px solid ${props => props.theme.fontColor};
   border-radius: 10px;
   padding: 10px 25px;
-  background: transparent;
+  background: ${props=>props.theme.fontColor};
   text-decoration: none;
   &:active{
-    box-shadow: 2px 2px 15px ${props => props.theme.fontColor} inset;
+    box-shadow: 2px 2px 15px ${props => props.theme.fontColor};
   }
   &:focus{
     outline: none;

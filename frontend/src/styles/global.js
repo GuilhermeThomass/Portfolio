@@ -5,7 +5,7 @@ const Global = createGlobalStyle`
         margin: 0;
         padding: 0;
         font-family: 'poppins',sans-serif;
-        
+        background-color: ${props => props.theme.body};
     }
     body{
         width: 100vw;
